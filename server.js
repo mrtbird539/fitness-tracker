@@ -13,13 +13,13 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(DB_URI, {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
 });
 
 app.use(routes);
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+    console.log(`App running on port ${PORT}!`);
 });
