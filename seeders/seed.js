@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const db = require('../models/workout.js');
 require("dotenv").config()
 
-mongoose.connect("mongodb+srv://root:rootroot@cluster0.evuwj.mongodb.net/imageperformance?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://root:rootroot@cluster0.evuwj.mongodb.net/fitnessTracker?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
