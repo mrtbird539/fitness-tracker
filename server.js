@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
-require("dotenv").config();
+require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(DB_URI, {
+mongoose.connect("mongodb+srv://root:rootroot@cluster0.evuwj.mongodb.net/imageperformance?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
