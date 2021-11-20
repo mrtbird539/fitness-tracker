@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://root:rootroot@cluster0.evuwj.mongodb.net/fitnessTracker?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DB_URI, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
